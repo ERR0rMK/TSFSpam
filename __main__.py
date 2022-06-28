@@ -1,7 +1,7 @@
 
 import glob
 from pathlib import Path
-from PythonX.utils import load_plugins
+from TSFSpam.utils import load_plugins
 import logging
 from . import MK, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10
 
@@ -9,7 +9,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-path = "PythonX/plugins/*.py"
+path = "TSFSpam/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:

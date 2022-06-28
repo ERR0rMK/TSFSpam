@@ -1,6 +1,6 @@
 
 import asyncio
-from PythonX import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, OWNER_ID, HEROKU_API_KEY, HEROKU_APP_NAME
+from TSFSpam import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, OWNER_ID, HEROKU_API_KEY, HEROKU_APP_NAME
 from .. import CMD_HNDLR as hl
 from telethon import events
 from datetime import datetime
@@ -42,7 +42,7 @@ async def logs(legend):
         await asyncio.sleep(1)
         await fetch.delete()
         logfile = open("BotSpamLogs.txt", "w")
-        logfile.write("⚡ PythonX ⚡ [ BotSpam Logs ]\n\n" + logs)
+        logfile.write("⚡ TSFSpam ⚡ [ BotSpam Logs ]\n\n" + logs)
         logfile.close()
         await MK1.send_file(legend.chat_id, "BotSpamLogs.txt", caption=f"⚡ 𝐏𝐲𝐭𝐡𝐨𝐧𝐗 𝐋𝐨𝐠𝐬 ⚡\n**Time Taken :** `{ms} Seconds`")
     else:

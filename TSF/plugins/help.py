@@ -1,6 +1,6 @@
-from PythonX import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS
+from TSFSpam import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS
 from telethon import events, Button
-from PythonX import CMD_HNDLR as hl
+from TSFSpam import CMD_HNDLR as hl
     
 HELP_PIC = "https://te.legra.ph/file/99116fb446f5c32414e5c.jpg"
 
@@ -157,7 +157,7 @@ async def helpback(event):
         )           
    else:
         Alert = (
-                "Make Your Own PythonX Bots !! @ALLENite_X"
+                "Make Your Own TSFSpam Bots !! @ALLENite_X"
             )
         await event.answer(Alert, cache_time=0, alert=True)
       
@@ -185,7 +185,7 @@ async def help_spam(event):
             ) 
    else:
         Alert = (
-                "Make Your Own PythonX Bots !! @ALLENite_X"
+                "Make Your Own TSFSpam Bots !! @ALLENite_X"
             )
         await event.answer(Alert, cache_time=0, alert=True)
                  
@@ -212,7 +212,7 @@ async def help_raid(event):
             )  
      else:
         Alert = (
-                "Make Your Own PythonX Bots !! @ALLENite_X"
+                "Make Your Own TSFSpam Bots !! @ALLENite_X"
             )
         await event.answer(Alert, cache_time=0, alert=True)
        
@@ -240,6 +240,6 @@ async def help_extra(event):
             )
    else:
         Alert = (
-                "Make Your Own PythonX Bots !! @ALLENite_X"
+                "Make Your Own TSFSpam Bots !! @ALLENite_X"
             )
         await event.answer(Alert, cache_time=0, alert=True)

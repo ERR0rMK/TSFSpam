@@ -5,14 +5,14 @@ import importlib
 from pathlib import Path
 
 def load_plugins(plugin_name):
-    path = Path(f"PythonX/plugins/{plugin_name}.py")
-    name = "PythonX.plugins.{}".format(plugin_name)
+    path = Path(f"TSFSpam/plugins/{plugin_name}.py")
+    name = "TSFSpam.plugins.{}".format(plugin_name)
     spec = importlib.util.spec_from_file_location(name, path)
     load = importlib.util.module_from_spec(spec)
     load.logger = logging.getLogger(plugin_name)
     spec.loader.exec_module(load)
-    sys.modules["PythonX.plugins." + plugin_name] = load
-    print("PythonX has Imported " + plugin_name)
+    sys.modules["TSFSpam.plugins." + plugin_name] = load
+    print("TSFSpam has Imported " + plugin_name)
 
 async def edit_or_reply(event, text):
     if event.sender_id in SUDO_USERS:

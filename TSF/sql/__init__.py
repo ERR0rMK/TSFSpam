@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 # the secret configuration specific things
-from PythonX import DB_URI
+from TSFSpam import DB_URI
 
 
 def start() -> scoped_session:

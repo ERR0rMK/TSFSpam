@@ -1,7 +1,7 @@
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, Button
 from .. import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, OWNER_ID
-from PythonX.plugins.help import *
+from TSFSpam.plugins.help import *
 
 
 PythonIMG = "https://te.legra.ph/file/99116fb446f5c32414e5c.jpg"
@@ -15,7 +15,7 @@ Python_Button = [
         ]
         ]
                
-PythonX_Button = [
+TSFSpam_Button = [
         [
         Button.url("✨ ᴄʜᴀɴɴᴇʟ ✨", "https://t.me/MKxHACKER"),
         Button.url("✨ sᴜᴘᴘᴏʀᴛ ✨", "https://t.me/HACKERxSPAM")
@@ -60,6 +60,6 @@ async def start(event):
             await event.client.send_file(ThePython,
                   PythonIMG,
                   caption=usermsg, 
-                  buttons=PythonX_Button)
+                  buttons=TSFSpam_Button)
                 
 
