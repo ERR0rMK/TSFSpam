@@ -215,7 +215,7 @@ async def spam(e):
             counter = int(mkmr[0])
             for _ in range(counter):
                 reply = random.choice(TSFAbuse)
-                caption = f"{username} {reply}"
+                caption = f"{username}\n\n{reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
                     await asyncio.sleep(0.3)
@@ -228,7 +228,7 @@ async def spam(e):
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
                 reply = random.choice(TSFAbuse)
-                caption = f"{username} {reply}"
+                caption = f"{username}\n\n{reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
                     await asyncio.sleep(0.1)
