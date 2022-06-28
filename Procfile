@@ -1,1 +1,1 @@
-MK: python -m TSFSpam
+MK: python -m TSF

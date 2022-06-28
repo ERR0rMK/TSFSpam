@@ -2,4 +2,4 @@ build:
   docker:
     MK: Dockerfile
 run:
-  MK: python3 -m TSFSpam
+  MK: python3 -m TSF

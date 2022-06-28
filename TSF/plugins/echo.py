@@ -5,10 +5,10 @@ import base64
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from TSFSpam import MK1, MK2, MK3, MK4, MK5 , MK6, MK7, MK8, MK9, MK10, SUDO_USERS, OWNER_ID
+from TSF import MK1, MK2, MK3, MK4, MK5 , MK6, MK7, MK8, MK9, MK10, SUDO_USERS, OWNER_ID
 
-from TSFSpam import CMD_HNDLR as hl
-from TSFSpam.sql.echo_sql import addecho, is_echo, remove_echo
+from TSF import CMD_HNDLR as hl
+from TSF.sql.echo_sql import addecho, is_echo, remove_echo
 from resources.data import RyanX
 
 
@@ -29,7 +29,7 @@ async def echo(event):
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
             if int(user_id) in RyanX:
-                    text = f"I Can't Echo TSFSpam's Owner"
+                    text = f"I Can't Echo TSF's Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
                     text = f"This Guy is Owner Of These Bots."

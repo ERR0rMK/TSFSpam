@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from TSFSpam.sql import BASE, SESSION
+from TSF.sql import BASE, SESSION
 
 
 class ECHOSQL(BASE):

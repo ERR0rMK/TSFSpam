@@ -1,6 +1,6 @@
-from TSFSpam import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS
+from TSF import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS
 from telethon import events, Button
-from TSFSpam import CMD_HNDLR as hl
+from TSF import CMD_HNDLR as hl
     
 HELP_PIC = "https://te.legra.ph/file/99116fb446f5c32414e5c.jpg"
 
