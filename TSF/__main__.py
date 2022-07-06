@@ -9,7 +9,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-path = "TSF/plugins/*.py"
+path = "Hemu/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -17,7 +17,7 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-print("\n𝐏𝐲𝐭𝐡𝐨𝐧𝐗 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 😎🤘🏻\nMy Master ---> @𝐀𝐋𝐋𝐄𝐍𝐢𝐭𝐞_𝐗")
+print("\n𝙃𝙀𝙈𝙐𝙓 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 😎🤘🏻\nMy Master ---> @Dark2opXDeadboy005_available")
 
 if __name__ == "__main__":
     MK1.run_until_disconnected()
